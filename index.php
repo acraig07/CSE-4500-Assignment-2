@@ -37,7 +37,7 @@ $json_data = json_decode($json_file,true);
           <h1><?php echo $json_data['first-name']; ?> <?php echo $json_data['last-name']; ?></h1>
           <div class="subheading mb-3">
             <?php echo $json_data['address']; ?> · <?php echo $json_data['phone']; ?> ·
-            <?php echo $json_data['email']; ?>"><?php echo $json_data['email']; ?>
+            <?php echo $json_data['email']; ?>
           </div>
           <p><?php echo $json_data['introduction']; ?></p>
         </div>
