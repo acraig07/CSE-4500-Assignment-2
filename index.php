@@ -84,11 +84,11 @@ $json_data = json_decode($json_file,true);
           <h4>Skills</h4>
           <?php foreach($json_data['skills'] AS $skills) { ?>
               <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                <ul>
-                  <li>
-                    <?php echo $skills['skill']; ?>
-                  </li>
-                </ul>
+              <ul>
+                <li>
+                  <?php echo $skills['skill']; ?>
+                </li>
+              </ul>
               </div>
           <?php  } ?>
         </div>
@@ -97,7 +97,7 @@ $json_data = json_decode($json_file,true);
       <div id="interests" class="content-item">
         <div class="vertical-center">
           <h4>Interests</h4>
-          <?php foreach($json_data['interests'] AS $interest) { ?>
+          <?php foreach($json_data['interests'] AS $interests) { ?>
               <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
               <ul>
                 <li>
