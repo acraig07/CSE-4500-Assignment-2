@@ -1,0 +1,47 @@
+{
+    "first-name": "Andrew",
+    "last-name": "Craig",
+    "address": "5500 University Pkwy, San Bernardino, CA 92407",
+    "phone": "(123)456-7890",
+    "email": "email@mail.com",
+    "introduction": "A introduction of youself ...",
+    "education":[
+        {
+            "school": "CSUSB",
+            "degree": "Computer Science",
+            "period": "March 2018 - Present",
+            "description": "Some description about your academic performance"
+        }
+    ],
+    "experience":[
+      {
+        "title":"WEB DEVELOPER",
+        "employer":"CSUSB",
+        "period":"March 2018 - Present",
+        "description":"A description of your experience with this job."
+      },
+      {
+        "title":"APPLICATION DEVELOPER",
+        "employer":"CSUSB",
+        "period":"March 2018 - 2021",
+        "description":"A description of your experience with this job."
+      }
+    ],
+    "skills":[
+        {
+            "skill_1": "Programming languages: C++, php, python, Java, JavaScipts, HTML, CSS",
+            "skill_2": "System design",
+            "skill_3": "System Administration"
+        }
+    ],
+    "Interests":[
+        {
+            "title": "Interest #1",
+            "description": "A description of your interest."
+        },
+        {
+            "title": "Interest #2",
+            "description": "A description of your interest."
+        }
+    ]
+  }

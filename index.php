@@ -1,3 +1,13 @@
+<?php
+
+// Read the JSON file
+$json_file = file_get_contents('my_data.json');
+
+// Decode the JSON file
+$json_data = json_decode($json_file,true);
+
+?>
+
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
@@ -16,17 +26,20 @@
           <a class="nav-link" href="#about">About</a>
           <a class="nav-link" href="#education">Education</a>
           <a class="nav-link" href="#experience">Experience</a>
+          <a class="nav-link" href="#skills">Skills</a>
+          <a class="nav-link" href="#interests">Interests</a>
         </nav>
       </nav>
     </div>
     <div data-bs-offset="0" tabindex="0">
       <div id="about" class="content-item">
         <div class="vertical-center">
-          <h1>Andrew Craig</h1>
-          <div class="subheading">
-            5500 University Pkwy, San Bernardino, CA 92407 · (123)456-7890
+          <h1><?php echo $json_data['first-name']; ?><span class="text-primary"><?php echo $json_data['last-name']; ?></span><</h1>
+          <div class="subheading mb-3">
+            <?php echo $json_data['address']; ?> · <?php echo $json_data['phone']; ?> ·
+            <a href="<?php echo $json_data['email']; ?>"><?php echo $json_data['email']; ?></a>
           </div>
-          <p>...</p>
+          <p><?php echo $json_data['introduction']; ?></p>
         </div>
       </div>
       <hr>
@@ -40,6 +53,20 @@
       <div id="experience" class="content-item">
         <div class="vertical-center">
           <h4>Experience</h4>
+          <p>...</p>
+        </div>
+      </div>
+      <hr>
+      <div id="skills" class="content-item">
+        <div class="vertical-center">
+          <h4>Skills</h4>
+          <p>...</p>
+        </div>
+      </div>
+      <hr>
+      <div id="interests" class="content-item">
+        <div class="vertical-center">
+          <h4>Interests</h4>
           <p>...</p>
         </div>
       </div>
