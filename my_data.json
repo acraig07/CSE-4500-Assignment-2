@@ -40,12 +40,10 @@
     ],
     "interests":[
         {
-            "title": "Interest #1",
-            "description": "A description of your interest."
+            "title": "Interest #1"
         },
         {
-            "title": "Interest #2",
-            "description": "A description of your interest."
+            "title": "Interest #2"
         }
     ]
   }
