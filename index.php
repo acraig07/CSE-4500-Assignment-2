@@ -75,8 +75,7 @@ $json_data = json_decode($json_file,true);
               <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                 <ul>
                   <li>
-                    ::marker
-                    <p><?php echo $skills['skill']; ?></p>
+                    <?php echo $skills['skill']; ?>
                   </li>
                 </ul>
               </div>
