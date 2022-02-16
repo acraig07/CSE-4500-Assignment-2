@@ -38,7 +38,7 @@
             "skill": "System Administration"
         }
     ],
-    "Interests":[
+    "interests":[
         {
             "title": "Interest #1",
             "description": "A description of your interest."
