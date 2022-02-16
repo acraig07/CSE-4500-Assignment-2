@@ -34,7 +34,7 @@ $json_data = json_decode($json_file,true);
     <div data-bs-offset="0" tabindex="0">
       <div id="about" class="content-item">
         <div class="vertical-center">
-          <h1><?php echo $json_data['first-name']; ?><span class="text-primary"><?php echo $json_data['last-name']; ?></span><</h1>
+          <h1><?php echo $json_data['first-name']; ?><span class="text-primary"><?php echo $json_data['last-name']; ?></span></h1>
           <div class="subheading">
             <?php echo $json_data['address']; ?> · <?php echo $json_data['phone']; ?> ·
             <a href="<?php echo $json_data['email']; ?>"><?php echo $json_data['email']; ?></a>
@@ -53,7 +53,18 @@ $json_data = json_decode($json_file,true);
       <div id="experience" class="content-item">
         <div class="vertical-center">
           <h4>Experience</h4>
-          <p>...</p>
+          <?php foreach($json_data['experience'] AS $experience) { ?>
+              <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                <div class="flex-grow-1">
+                  <h3 class="mb-0"><?php echo $experience['title']; ?></h3>
+                  <div class="subheading mb-3"><?php echo $experience['employer']; ?></div>
+                  <p><?php echo $experience['description']; ?></p>
+                </div>
+                <div class="flex-shrink-0">
+                  <span class="text-primary"><?php echo $experience['period']; ?></span>
+                </div>
+              </div>
+          <?php  } ?>
         </div>
       </div>
       <hr>
