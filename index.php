@@ -35,7 +35,7 @@ $json_data = json_decode($json_file,true);
       <div id="about" class="content-item">
         <div class="vertical-center">
           <h1><?php echo $json_data['first-name']; ?><span class="text-primary"><?php echo $json_data['last-name']; ?></span></h1>
-          <div class="subheading">
+          <div class="subheading mb-3">
             <?php echo $json_data['address']; ?> · <?php echo $json_data['phone']; ?> ·
             <a href="<?php echo $json_data['email']; ?>"><?php echo $json_data['email']; ?></a>
           </div>
@@ -71,7 +71,16 @@ $json_data = json_decode($json_file,true);
       <div id="skills" class="content-item">
         <div class="vertical-center">
           <h4>Skills</h4>
-          <p>...</p>
+          <?php foreach($json_data['experience'] AS $experience) { ?>
+              <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                <ul>
+                  <li>
+                    ::marker
+                    <p><?php echo $skills['skill']; ?></p>
+                  </li>
+                </ul>
+              </div>
+          <?php  } ?>
         </div>
       </div>
       <hr>

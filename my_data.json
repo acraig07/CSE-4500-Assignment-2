@@ -29,9 +29,13 @@
     ],
     "skills":[
         {
-            "skill_1": "Programming languages: C++, php, python, Java, JavaScipts, HTML, CSS",
-            "skill_2": "System design",
-            "skill_3": "System Administration"
+            "skill": "Programming languages: C++, php, python, Java, JavaScipts, HTML, CSS"
+        },
+        {
+            "skill": "System design"
+        },
+        {
+            "skill": "System Administration"
         }
     ],
     "Interests":[
