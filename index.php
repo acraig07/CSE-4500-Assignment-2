@@ -71,15 +71,15 @@ $json_data = json_decode($json_file,true);
       <div id="skills" class="content-item">
         <div class="vertical-center">
           <h4>Skills</h4>
-          <?php foreach($json_data['skills'] AS $skills) { ?>
               <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+              <?php foreach($json_data['skills'] AS $skills) { ?>
                 <ul>
                   <li>
                     <?php echo $skills['skill']; ?>
                   </li>
                 </ul>
+              <?php  } ?>
               </div>
-          <?php  } ?>
         </div>
       </div>
       <hr>
